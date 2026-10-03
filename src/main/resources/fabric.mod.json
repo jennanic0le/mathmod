@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mathmod",
+	"version": "${version}",
+	"name": "MathMod",
+	"description": "This is a mod that helps teach math!",
+	"authors": [
+		"Jenna Schulte"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mathmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.math.mathmod.MathMod"
+		],
+		"fabric-datagen": [
+			"net.math.mathmod.MathModDataGenerator"
+		],
+		"client": [
+			"net.math.mathmod.MathModClient"
+		]
+	},
+	"mixins": [
+		"mathmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
