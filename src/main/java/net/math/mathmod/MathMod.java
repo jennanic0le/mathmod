@@ -3,6 +3,7 @@ package net.math.mathmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.math.mathmod.item.ModItems;
+import net.math.mathmod.potion.ModPotions;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class MathMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModPotions.registerPotions();
 	}
 }
 
